@@ -21,9 +21,7 @@ public class Calculos {
         resultado = calcularValor(listaNumeros, listaOperadores);
  
         return resultado;
- 
     }
- 
     private String calcularValor(List<Double> listaNumeros, List<Character> listaOperadores) {
         String resultado = "";
         double total = 0.0;
@@ -43,15 +41,10 @@ public class Calculos {
                 total = executarOperacao(total, operador, numero2);
                 j++;
             }
-             
-             
- 
         }
- 
         resultado = ""+total;
         return resultado;
     }
- 
     private double executarOperacao(double numero1, char operador, double numero2) {
         double resultado = 0.0;
  
@@ -66,7 +59,6 @@ public class Calculos {
         }
         return resultado;
     }
- 
     private List<Double> obterNumeros(String expressao) {
  
         List<Double> listaNumeros = new ArrayList<Double>();
@@ -85,12 +77,10 @@ public class Calculos {
         if(!numeroEmString.isEmpty())
         {
                 Double numero = Double.valueOf(numeroEmString);
-                listaNumeros.add(numero);
-             
+                listaNumeros.add(numero);             
         }
         return listaNumeros;
     }
- 
     private List<Character> obterOperadores(String expressao) {
  
         List<Character> listaOperadores = new ArrayList<Character>();
