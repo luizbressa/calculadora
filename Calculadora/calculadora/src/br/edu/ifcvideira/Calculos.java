@@ -48,13 +48,13 @@ public class Calculos {
     private double executarOperacao(double numero1, char operador, double numero2) {
         double resultado = 0.0;
  
-        if (operador == '1') {
+        if (operador == '+') {
             resultado = numero1 + numero2;
-        } else if (operador == '2') {
+        } else if (operador == '-') {
             resultado = numero1 - numero2;
-        } else if (operador == '3') {
+        } else if (operador == '/') {
             resultado = numero1 / numero2;
-        } else if (operador == '4') {
+        } else if (operador == '*') {
             resultado = numero1 * numero2;
         }
         return resultado;
